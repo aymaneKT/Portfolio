@@ -11,7 +11,7 @@ export default function Skills() {
       <h3 className="text-white text-2xl mt-[2rem] font-[Orbitron] text-center">
         The skills , tools and technologies I use :
       </h3>
-      <Fade direction="left" duration={1500} triggerOnce delay={2000}>
+      <Fade direction="left" duration={1500} triggerOnce>
         <div className="flex gap-7 justify-center mt-7">
           <img
             className="w-[55px] h-[55px] hover:drop-shadow-[0px_0px_15px_#E44D26] transition duration-250 ease-in-out"
@@ -44,7 +44,7 @@ export default function Skills() {
           />
         </div>
       </Fade>
-      <Fade direction="right" duration={1500} triggerOnce delay={2000}>
+      <Fade direction="right" duration={1500} triggerOnce>
         <div className="flex gap-7 justify-center mt-7">
           <img
             className="w-[55px] h-[55px] hover:drop-shadow-[0px_0px_15px_#61DAFB] transition duration-250 ease-in-out"

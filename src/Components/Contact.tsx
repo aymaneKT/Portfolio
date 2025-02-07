@@ -4,15 +4,24 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Form from "./Form";
+
+
+
 export default function Contact() {
+
+
   return (
-    <div className="text-white flex justify-around flex-wrap gap-7 mt-[3rem]">
+    <div className="text-white flex justify-around flex-wrap gap-7 mt-[3rem] relative">
       <div>
         <div className="flex items-center gap-2 flex-wrap my-7">
-          <h2 className="text-3xl font-[Orbitron] font-semibold">GET IN TOUCH </h2> <MailOutlineIcon style={{
-            fontSize : "30px"
-            
-          }}/>
+          <h2 className="text-3xl font-[Orbitron] font-semibold">
+            GET IN TOUCH{" "}
+          </h2>{" "}
+          <MailOutlineIcon
+            style={{
+              fontSize: "30px",
+            }}
+          />
         </div>
         <div className="flex items-center gap-8">
           <div className="flex flex-col justify-center gap-6">

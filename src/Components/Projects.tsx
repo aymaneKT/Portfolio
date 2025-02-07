@@ -9,7 +9,7 @@ export default function Projects() {
   const mappingProjects = ProjectArray.filter(
     (p): p is projectProps => p !== undefined
   ).map((p: projectProps) => (
-    <SingleProject name={p.name} link={p.link} image={p.image} />
+    <SingleProject key={p.name + p.link} name={p.name} link={p.link} image={p.image} />
   ));
   return (
     <div>

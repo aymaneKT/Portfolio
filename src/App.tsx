@@ -17,11 +17,11 @@ function App() {
     }, 3000);
   }, []);
 
-  return (
+  return isLoading ? (
+    <Loader isLoading={isLoading} />
+  ) : (
     <>
-      <Loader isLoading={isLoading} />
       <Header />
-      {/* <Me /> */}
       <Skills />
       <Projects />
       <Contact />
