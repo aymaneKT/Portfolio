@@ -3,7 +3,7 @@ import ShadowDiv from "./ShadowDiv";
 
 export default function Skills() {
   return (
-    <div className="p-8 relative my-9">
+    <div className="p-8 relative my-[7rem]" id="Skills">
       <ShadowDiv />
       <h1 className="inline-block font-[Audiowide] text-white font-bold text-3xl relative left-[10%]">
         SKILLS

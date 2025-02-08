@@ -7,6 +7,8 @@ import Projects from "./Components/Projects";
 // import Me from "./Components/Me";
 import { useState, useEffect } from "react";
 import Contact from "./Components/Contact";
+import Me from "./Components/Me";
+import Footer from "./Components/Footer";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -22,9 +24,11 @@ function App() {
   ) : (
     <>
       <Header />
+      <Me />
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 }

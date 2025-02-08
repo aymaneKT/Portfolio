@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
 
 type InfoType = {
   name: string;
@@ -11,6 +12,7 @@ type InfoType = {
 const VITE_TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
 const VITE_API_KEY = import.meta.env.VITE_API_KEY;
 const VITE_SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const VITE_AUTOREPLY_TEMPLATE_ID = import.meta.env.VITE_AUTOREPLY_TEMPLATE_ID;
 
 const Form = () => {
   const [info, setInfo] = useState<InfoType>({
@@ -19,11 +21,11 @@ const Form = () => {
     message: "",
   });
 
-  const isDisabled = !info.name || !info.email || !info.message || !info.email.includes("@");
+  const isDisabled =
+    !info.name || !info.email || !info.message || !info.email.includes("@");
 
   const submitForm = (e: React.FormEvent) => {
     e.preventDefault();
-
     let templateParams = {
       name: info.name,
       email: info.email,
@@ -35,12 +37,35 @@ const Form = () => {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
-          alert("Email inviata con successo!");
+          toast("Email sent successfully!", {
+            position: "bottom-left",
+          });
           setInfo({ name: "", email: "", message: "" });
+          const autoReplyParams = {
+            name: info.name,
+            email: info.email,
+          };
+          emailjs
+            .send(
+              VITE_SERVICE_ID,
+              VITE_AUTOREPLY_TEMPLATE_ID,
+              autoReplyParams,
+              VITE_API_KEY
+            )
+            .then(
+              (response) => {
+                console.log(response);
+              },
+              (error) => {
+                console.error(error);
+              }
+            );
         },
         (error) => {
           console.log("FAILED...", error);
-          alert("Errore nell'invio dell'email.");
+          toast.error("Oops! Something went wrong.", {
+            position: "bottom-left",
+          });
         }
       );
   };
@@ -90,6 +115,7 @@ const Form = () => {
           </button>
         </form>
       </div>
+      <ToastContainer />
     </StyledWrapper>
   );
 };
@@ -173,9 +199,22 @@ const StyledWrapper = styled.div`
     color: #fff;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (width<=780px) {
     .form-container {
-      width: 100%;
+      width: 350px;
+    }
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
     }
   }
 `;

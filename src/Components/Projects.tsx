@@ -9,10 +9,15 @@ export default function Projects() {
   const mappingProjects = ProjectArray.filter(
     (p): p is projectProps => p !== undefined
   ).map((p: projectProps) => (
-    <SingleProject key={p.name + p.link} name={p.name} link={p.link} image={p.image} />
+    <SingleProject
+      key={p.name + p.link}
+      name={p.name}
+      link={p.link}
+      image={p.image}
+    />
   ));
   return (
-    <div>
+    <div className="my-[2rem]" id="Projects">
       <h1 className="font-[Audiowide] inline-block text-white font-bold text-3xl relative left-[10%] mb-[2rem]">
         PROJECTS
       </h1>
