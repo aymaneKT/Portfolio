@@ -4,11 +4,10 @@ import Header from "./Components/Header";
 import Skills from "./Components/Skills";
 import Loader from "./Components/Loader";
 import Projects from "./Components/Projects";
-// import Me from "./Components/Me";
 import { useState, useEffect } from "react";
 import Contact from "./Components/Contact";
-import Me from "./Components/Me";
 import Footer from "./Components/Footer";
+import { DeviceContextProvider } from "./context/DeviceContext";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -19,16 +18,19 @@ function App() {
     }, 3000);
   }, []);
 
-  return isLoading ? (
-    <Loader isLoading={isLoading} />
-  ) : (
+  // return isLoading ? (
+  //   <Loader isLoading={isLoading} />
+  // ) : (
+  return (
     <>
-      <Header />
-      <Me />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      <DeviceContextProvider>
+        <Header />
+        {/* <Me /> */}
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </DeviceContextProvider>
     </>
   );
 }
