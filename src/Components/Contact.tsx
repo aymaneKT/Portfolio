@@ -1,7 +1,6 @@
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Form from "./Form";
 
@@ -50,12 +49,13 @@ export default function Contact() {
                 >
                   <InstagramIcon />
                 </a>
-                <a className="hover:text-[#61DAFB]" href="#">
+                {/* <a className="hover:text-[#61DAFB]" href="#">
                   <WhatsAppIcon />
-                </a>
+                </a> */}
                 <a
                   className="hover:text-[#61DAFB]"
                   href="https://github.com/aymaneKT"
+                  target="_blank"
                 >
                   <GitHubIcon />
                 </a>

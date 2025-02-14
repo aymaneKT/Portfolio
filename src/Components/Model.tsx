@@ -9,12 +9,9 @@ import {
 // import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import Me from "./Me";
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
-interface IFullScreen {
-    enable: boolean;
-    zIndex: number;
-}
 
 export default function Model () {
   const [init, setInit] = useState(false);
@@ -47,7 +44,8 @@ export default function Model () {
         
       },
       fullScreen:{
-        enable:false
+        enable:false,
+        zIndex:-20000,
       },
       fpsLimit: 120,
       interactivity: {
@@ -73,13 +71,13 @@ export default function Model () {
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "#5CCEED",
         },
         links: {
           color: "#ffffff",
-          distance: 150,
+          distance: 200,
           enable: true,
-          opacity: 0.5,
+          opacity: 0.7,
           width: 1,
         },
         move: {
@@ -96,7 +94,7 @@ export default function Model () {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 70,
         },
         opacity: {
           value: 0.5,
@@ -115,13 +113,21 @@ export default function Model () {
 
   if (init) {
     return (
+        <>
       <Particles
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
+        className="absolute
+        top-0 left-0 right-0 bottom-0
+        "
       />
+      
+      </>
     );
   }
 
-  return <></>;
+  return <>
+  
+  </>;
 };

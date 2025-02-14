@@ -26,7 +26,7 @@ export default function Header() {
       <div className="flex items-center max-[600px]:items-end justify-around p-3 bg-linae bg-[#0D121B] fixed top-0 left-0 w-[100%] z-40">
         <img src={icon} className="h-[50px] w-[50px] invert cursor-pointer " />
         <ul
-          className="flex gap-9 bold font-medium font-[Audiowide] text-white max-[600px]:absolute max-[600px]:flex-col max-[600px]:backdrop-blur-xl max-[600px]:w-[100%] max-[600px]:items-center max-[600px]:bg-[rgba(0,0,0,0.2)] max-[600px]:p-4 transition-all duration-1000 header_list"
+          className="flex gap-9 bold font-medium font-[Audiowide] text-white max-[600px]:absolute max-[600px]:flex-col max-[600px]:backdrop-blur-[4px] max-[600px]:w-[100%] max-[600px]:items-center max-[600px]:bg-[rgba(0,0,0,0.2)] max-[600px]:p-4 transition-all duration-500 header_list"
           style={{
             transform: isDroppedTheMenu
               ? "translateY(100%)"

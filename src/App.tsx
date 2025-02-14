@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import { DeviceContextProvider } from "./context/DeviceContext";
-import Model from "./Components/Model";
+import Me from "./Components/Me";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -19,15 +19,14 @@ function App() {
     }, 3000);
   }, []);
 
-  // return isLoading ? (
-  //   <Loader isLoading={isLoading} />
-  // ) : (
-  return (
+  return isLoading ? (
+    <Loader isLoading={isLoading} />
+  ) : (
     <>
       <DeviceContextProvider>
         <Header />
-        {/* <Me /> */}
-        <Model />
+        <Me />
+        {/* <Model /> */}
         <Skills />
         <Projects />
         <Contact />

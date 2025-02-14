@@ -1,10 +1,10 @@
-import weatherForecast from "../weather-forecast.png";
-import weatherForecastTs from "../Weather Forecast-ts.png";
-import todoAPP from "../TodoAPP.png";
-import pictureHotel from "../Hotel.png";
-import Animation from "../3Danimation.png";
-import ListSpace from "../ListSpace.png";
-import adhan from "../AdhanImg.png";
+import weatherForecast from "../Images/weather-forecast.png";
+import weatherForecastTs from "../Images/Weather Forecast-ts.png";
+import todoAPP from "../Images/TodoAPP.png";
+import pictureHotel from "../Images/Hotel.png";
+import Animation from "../Images/3Danimation.png";
+import ListSpace from "../Images/ListSpace.png";
+import adhan from "../Images/AdhanImg.png";
 export const ProjectArray = [
   {
     name: "Weather Forecast (Italy)",
