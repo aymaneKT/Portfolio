@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import { DeviceContextProvider } from "./context/DeviceContext";
+import Model from "./Components/Model";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -26,6 +27,7 @@ function App() {
       <DeviceContextProvider>
         <Header />
         {/* <Me /> */}
+        <Model />
         <Skills />
         <Projects />
         <Contact />
