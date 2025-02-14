@@ -1,6 +1,6 @@
 import "../App.css";
 import "../res.css";
-import icon from "../icon.png";
+import icon from "../Images/icon.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import { useContext } from "react";
