@@ -6,16 +6,16 @@ export default function Me() {
   return (
     <div className=" my-[11rem] reltive  " id="About">
       <Model />
-      <h1 className="text-[#fff] font-[Orbitron] inline-block text-[4vw] max-[500px]:text-[32px] relative font-extrabold  left-[10%] max-[500px]:left-[7%] leading-[4rem]">
-        Hi, <br />
-        <span className="flex gap-2">
+      <div className="text-[#fff] font-[Orbitron]  text-[4vw] w-fit  relative font-extrabold  left-[10%]  max-[500px]:text-[30px] max-[500px]:left-[0%] pl-7">
+        <h1 className="inline-block w-fit">Hi ,</h1>
+        <span className="flex gap-2 w-fit">
           I'am{" "}
           <Fade direction="down" triggerOnce>
             <span className="text-[#5CCEED]">AYMANE KABTI </span>
           </Fade>
         </span>
-        FRONT-END DEVELOPER
-      </h1>
+        <h1 className="inline-block w-fit">FRONT-END DEVELOPER</h1>
+      </div>
     </div>
   );
 }
