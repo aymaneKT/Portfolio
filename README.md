@@ -74,5 +74,5 @@ VITE_API_KEY=your_api_key
 
 ---
 
-💻 Created with ❤️ by [Aymane Kabti](https://aymanekt.netlify.app/)
+💻 Created with ❤️ by [Aymane Kabti](https://aymanekabti.netlify.app/)
 
