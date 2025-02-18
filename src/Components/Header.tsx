@@ -5,6 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import { useContext } from "react";
 import { DeviceContext } from "../context/DeviceContext";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const menuItems = [
@@ -34,17 +35,21 @@ export default function Header() {
           }}
         >
           {menuItems.map((item) => (
-            <a
-              href={item.href}
+            <li
               key={item.name}
-              onClick={() => {
-                setisDroppedTheMenu(false);
-              }}
+              className="cursor-pointer uppercase hover:text-emerald-100 transition-[0.5s]"
             >
-              <li className="cursor-pointer uppercase hover:text-emerald-100 transition-[0.5s]">
-                {item.name}
-              </li>
-            </a>
+              <Link to={item.name} smooth={true} offset={-75} duration={500}>
+                <a
+                  href={item.href}
+                  onClick={() => {
+                    setisDroppedTheMenu(false);
+                  }}
+                >
+                  {item.name}
+                </a>
+              </Link>
+            </li>
           ))}
         </ul>
         {isDroppedTheMenu ? (

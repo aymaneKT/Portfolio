@@ -1,5 +1,6 @@
 import SingleProject from "./SingleProject";
 import { ProjectArray } from "./ProjectsArray";
+import { Element } from "react-scroll";
 type projectProps = {
   name: string;
   link: string;
@@ -17,13 +18,15 @@ export default function Projects() {
     />
   ));
   return (
-    <div className="my-[2rem]" id="Projects">
-      <h1 className="font-[Audiowide] inline-block text-white font-bold text-3xl relative left-[10%] mb-[2rem]">
-        PROJECTS
-      </h1>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,auto))] gap-6 p-11">
-        {mappingProjects}
+    <Element name="Projects">
+      <div className="my-[2rem]">
+        <h1 className="font-[Audiowide] inline-block text-white font-bold text-3xl relative left-[10%] mb-[2rem]">
+          PROJECTS
+        </h1>
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,auto))] p-5 gap-6">
+          {mappingProjects}
+        </div>
       </div>
-    </div>
+    </Element>
   );
 }

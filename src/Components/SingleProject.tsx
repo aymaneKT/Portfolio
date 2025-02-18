@@ -9,7 +9,7 @@ export default function SingleProject(props: projectProp) {
     <div className="hover:shadow-[0px_0px_40px_15px_rgba(19,_28,_67,_1)] transition ] rounded-[8px] overflow-hidden">
       <a href={props.link} target="_blank">
         <div>
-          <img src={props.image} alt="Hotel Picture" />
+          <img src={props.image} alt="Hotel Picture" className="aspect-2/1"/>
           <div className="bg-gradient-to-r from-[#0F1620] to-[#131A2A] p-3 relative">
             <h3 className="text-white font-[Orbitron] text-center py-4">
               {props.name}
