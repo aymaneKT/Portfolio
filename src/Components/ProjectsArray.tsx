@@ -34,7 +34,7 @@ export const ProjectArray = [
   },
   {
     name: "Twixio",
-    link: "https://https://willowy-starburst-4f4414.netlify.app/",
+    link: "https://willowy-starburst-4f4414.netlify.app/",
     image: Twixio,
   },
 ];
