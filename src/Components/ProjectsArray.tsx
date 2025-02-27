@@ -5,6 +5,12 @@ import pictureHotel from "../Images/Hotel.png";
 import luxuryWatches from "../Images/WatchesStore.png";
 export const ProjectArray = [
   {
+    name: "Watches Store",
+    link: "https://luxurywatches-kt.netlify.app/",
+    image: luxuryWatches,
+  },
+
+  {
     name: "Weather Forecast (Italy)",
     link: "https://dulcet-piroshki-d90757.netlify.app/",
     image: weatherForecast,
@@ -24,10 +30,5 @@ export const ProjectArray = [
     name: "Todo App",
     link: "https://subtle-monstera-788b0d.netlify.app/",
     image: todoAPP,
-  },
-  {
-    name: "Watches Store",
-    link: "https://luxurywatches-kt.netlify.app/",
-    image: luxuryWatches,
   },
 ];
