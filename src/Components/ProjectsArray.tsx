@@ -3,6 +3,7 @@ import weatherForecastTs from "../Images/Weather Forecast-ts.png";
 import todoAPP from "../Images/TodoAPP.png";
 import pictureHotel from "../Images/Hotel.png";
 import luxuryWatches from "../Images/WatchesStore.png";
+import Twixio from "../Images/Twixio.png";
 export const ProjectArray = [
   {
     name: "Watches Store",
@@ -30,5 +31,10 @@ export const ProjectArray = [
     name: "Todo App",
     link: "https://subtle-monstera-788b0d.netlify.app/",
     image: todoAPP,
+  },
+  {
+    name: "Twixio",
+    link: "https://https://willowy-starburst-4f4414.netlify.app/",
+    image: Twixio,
   },
 ];
