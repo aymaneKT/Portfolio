@@ -2,9 +2,7 @@ import weatherForecast from "../Images/weather-forecast.png";
 import weatherForecastTs from "../Images/Weather Forecast-ts.png";
 import todoAPP from "../Images/TodoAPP.png";
 import pictureHotel from "../Images/Hotel.png";
-import Animation from "../Images/3Danimation.png";
-import ListSpace from "../Images/ListSpace.png";
-import adhan from "../Images/AdhanImg.png";
+import luxuryWatches from "../Images/WatchesStore.png";
 export const ProjectArray = [
   {
     name: "Weather Forecast (Italy)",
@@ -28,18 +26,8 @@ export const ProjectArray = [
     image: todoAPP,
   },
   {
-    name: "Adhan Time",
-    link: "https://papaya-buttercream-4e36f7.netlify.app/",
-    image: adhan,
-  },
-  {
-    name: "Simple 3D Animation",
-    link: "https://melodic-churros-fec303.netlify.app/",
-    image: Animation,
-  },
-  {
-    name: "solar system",
-    link: "https://stellular-klepon-75af5e.netlify.app/",
-    image: ListSpace,
+    name: "Watches Store",
+    link: "https://luxurywatches-kt.netlify.app/",
+    image: luxuryWatches,
   },
 ];
