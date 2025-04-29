@@ -23,4 +23,5 @@ src/Images
 *.sln
 *.sw?
 *.env
+*.png
 
