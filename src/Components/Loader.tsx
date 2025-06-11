@@ -11,15 +11,22 @@ const Loader = ({ isLoading }: isLoadingProps) => {
         display: isLoading ? "flex" : "none",
       }}
     >
-      <div className="shadow">
+      <div
+        className="shadow"
+        style={{
+          opacity: isLoading ? 1 : 0,
+          visibility: isLoading ? "visible" : "hidden",
+          transition: "opacity 0.3s ease",
+        }}
+      >
         <div className="terminal-loader">
           <div className="terminal-header">
-            <div className="terminal-title">Status</div>
-            <div className="terminal-controls">
-              <div className="control close" />
-              <div className="control minimize" />
-              <div className="control maximize" />
-            </div>
+        <div className="terminal-title">Status</div>
+        <div className="terminal-controls">
+          <div className="control close" />
+          <div className="control minimize" />
+          <div className="control maximize" />
+        </div>
           </div>
           <div className="text">Loading...</div>
         </div>

@@ -58,17 +58,34 @@ export default function Skills() {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
               alt="Git"
             />
-
             <img
               className="max-[500px]:w-[45px] w-[55px] h-[55px] hover:drop-shadow-[0px_0px_15px_#CB3837] transition duration-250 ease-in-out"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
               alt="NPM"
             />
-
             <img
               className="max-[500px]:w-[45px] w-[55px] h-[55px] hover:drop-shadow-[0px_0px_15px_#fff] transition duration-250 ease-in-out invert"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
               alt="GitHub"
+            />
+          </div>
+        </Fade>
+        <Fade direction="left" duration={1500} triggerOnce>
+          <div className="flex gap-7 justify-center mt-7">
+            <img
+              className="w-[12vw] max-w-[55px] min-w-[35px] h-auto hover:drop-shadow-[0px_0px_15px_#336791] transition duration-250 ease-in-out"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+              alt="SQL"
+            />
+            <img
+              className="w-[12vw] max-w-[55px] min-w-[35px] h-auto hover:drop-shadow-[0px_0px_15px_#339933] transition duration-250 ease-in-out"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+            />
+            <img
+              className="w-[12vw] max-w-[55px] min-w-[35px] h-auto filter invert hover:drop-shadow-[0px_0px_15px_#fff] transition duration-250 ease-in-out"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+              alt="Express.js"
             />
           </div>
         </Fade>

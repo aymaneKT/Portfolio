@@ -23,7 +23,7 @@ export default function Projects() {
         <h1 className="font-[Audiowide] inline-block text-white font-bold text-3xl relative left-[10%] mb-[2rem]">
           PROJECTS
         </h1>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,auto))] p-5 gap-6">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(400px,auto))] p-5 gap-6">
           {mappingProjects}
         </div>
       </div>

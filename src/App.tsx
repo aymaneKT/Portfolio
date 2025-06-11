@@ -19,11 +19,10 @@ function App() {
     }, 3000);
   }, []);
 
-  return isLoading ? (
-    <Loader isLoading={isLoading} />
-  ) : (
+  return (
     <>
       <DeviceContextProvider>
+        <Loader isLoading={isLoading} />
         <Header />
         <Me />
         {/* <Model /> */}
