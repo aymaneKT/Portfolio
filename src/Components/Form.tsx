@@ -9,18 +9,17 @@ type InfoType = {
   message: string;
 };
 
-const VITE_TEMPLATE_ID: string = import.meta.env.VITE_TEMPLATE_ID;
-const VITE_API_KEY: string = import.meta.env.VITE_API_KEY;
-const VITE_SERVICE_ID: string = import.meta.env.VITE_SERVICE_ID;
-const VITE_AUTOREPLY_TEMPLATE_ID: string = import.meta.env
-  .VITE_AUTOREPLY_TEMPLATE_ID;
-
-const Form = () => {
+export default function Form() {
   const [info, setInfo] = useState<InfoType>({
     name: "",
     email: "",
     message: "",
   });
+  const VITE_TEMPLATE_ID: string = import.meta.env.VITE_TEMPLATE_ID;
+  const VITE_API_KEY: string = import.meta.env.VITE_API_KEY;
+  const VITE_SERVICE_ID: string = import.meta.env.VITE_SERVICE_ID;
+  const VITE_AUTOREPLY_TEMPLATE_ID: string = import.meta.env
+    .VITE_AUTOREPLY_TEMPLATE_ID;
 
   const isDisabled: boolean =
     !info.name || !info.email || !info.message || !info.email.includes("@");
@@ -119,7 +118,7 @@ const Form = () => {
       <ToastContainer />
     </StyledWrapper>
   );
-};
+}
 
 const StyledWrapper = styled.div`
   .form-container {
@@ -219,5 +218,3 @@ const StyledWrapper = styled.div`
     }
   }
 `;
-
-export default Form;
