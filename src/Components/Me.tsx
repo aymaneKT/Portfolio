@@ -1,4 +1,3 @@
-import { Fade } from "react-awesome-reveal";
 import "../res.css";
 import Model from "./Model";
 import { Element } from "react-scroll";
@@ -12,11 +11,9 @@ export default function Me() {
           <h1 className="inline-block w-fit">Hi ,</h1>
           <span className="flex gap-2 w-fit">
             I'am{" "}
-            <Fade direction="down" triggerOnce>
               <span className="text-[#5CCEED]">AYMANE KABTI </span>
-            </Fade>
           </span>
-          <h1 className="inline-block w-fit">FRONT-END DEVELOPER</h1>
+          <h1 className="inline-block w-fit">WEB DEVELOPER</h1>
         </div>
       </div>
     </Element>
