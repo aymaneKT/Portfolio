@@ -50,7 +50,7 @@ export default function Model () {
       interactivity: {
         events: {
           onClick: {
-            enable: true,
+            enable: false,
             mode: "push",
           },
           onHover: {
@@ -63,7 +63,7 @@ export default function Model () {
             quantity: 4,
           },
           repulse: {
-            distance: 200,
+            distance: 250,
             duration: 0.4,
           },
         },

@@ -6,10 +6,16 @@ import luxuryWatches from "../Images/WatchesStore.png";
 import Twixio from "../Images/Twixio2.png";
 import volutionWear from "../Images/VolutionWear.png";
 import myrecipe from "../Images/myrecipe.png";
+import rentalCars from "../Images/home.png";
 export const ProjectArray = [
   {
-    name: "Volution Wear",
+    name: "Renatal Cars",
     link: "https://github.com/aymaneKT/volutionWear",
+    image: rentalCars,
+  },
+  {
+    name: "Volution Wear",
+    link: "https://github.com/aymaneKT/CarRental",
     image: volutionWear,
   },
   {
