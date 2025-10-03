@@ -10,12 +10,12 @@ import rentalCars from "../Images/home.png";
 export const ProjectArray = [
   {
     name: "Renatal Cars",
-    link: "https://github.com/aymaneKT/volutionWear",
+    link: "https://github.com/aymaneKT/CarRental",
     image: rentalCars,
   },
   {
     name: "Volution Wear",
-    link: "https://github.com/aymaneKT/CarRental",
+    link: "https://github.com/aymaneKT/volutionWear",
     image: volutionWear,
   },
   {
